@@ -1,0 +1,5 @@
+# Prevent search engines from indexing hidden carousel images
+User-agent: *
+Disallow: /assets/.carousel/
+
+# Allow everything else
