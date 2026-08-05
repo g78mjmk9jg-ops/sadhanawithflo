@@ -6,3 +6,16 @@
 client_secret.json
 *.pickle
 .google_token_ga4.pickle
+
+# Keep locally only (synced via iCloud) — not on GitHub
+CLAUDE.md
+README.md
+EXPANSIONS.md
+aios-intake.md
+connections.md
+context/
+decisions/
+references/
+scripts/
+social-media/
+.claude/skills/
