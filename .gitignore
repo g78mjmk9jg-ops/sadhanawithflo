@@ -2,3 +2,7 @@
 .env
 .env.*
 !.env.example
+.env.local
+client_secret.json
+*.pickle
+.google_token_ga4.pickle
