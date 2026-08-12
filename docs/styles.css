@@ -162,6 +162,28 @@ a { color: var(--primary); text-decoration: none; }
 }
 .btn:hover { opacity: 0.85; }
 
+.btn-secondary {
+  background: var(--secondary);
+  color: #fff !important;
+}
+
+.btn-secondary:hover { opacity: 0.85; }
+
+.circles-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+
+.circle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 .back-link-inline {
   display: inline-block;
   text-align: center;
