@@ -39,19 +39,20 @@ showPage(currentHashPage());
 const carouselImg = document.getElementById('carouselImg');
 if (carouselImg) {
   const carouselImages = [
-    'assets/images/carousel/3b01bf5a-569a-485d-9b3e-bba7e4fe6c7d.jpg',
-    'assets/images/carousel/AFC9F46E-C1DE-4226-A801-618EED5170B0_1_105_c.jpeg',
-    'assets/images/carousel/IMG_8164.jpeg',
-    'assets/images/carousel/WhatsApp Image 2026-08-12 at 15.03.06 (1).jpeg',
-    'assets/images/carousel/WhatsApp Image 2026-08-12 at 15.03.06 (2).jpeg',
-    'assets/images/carousel/WhatsApp Image 2026-08-12 at 15.03.06 (3).jpeg',
-    'assets/images/carousel/WhatsApp Image 2026-08-12 at 15.03.06 (4).jpeg',
-    'assets/images/carousel/WhatsApp Image 2026-08-12 at 15.03.06.jpeg'
+    'assets/images/carousel/1.jpeg',
+    'assets/images/carousel/2.jpeg',
+    'assets/images/carousel/3.jpeg',
+    'assets/images/carousel/4.jpeg',
+    'assets/images/carousel/5.jpg'
   ];
   let currentImageIndex = 0;
 
   setInterval(() => {
-    currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
-    carouselImg.src = carouselImages[currentImageIndex];
-  }, 3000);
+    carouselImg.style.opacity = '0';
+    setTimeout(() => {
+      currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+      carouselImg.src = carouselImages[currentImageIndex];
+      carouselImg.style.opacity = '1';
+    }, 500);
+  }, 5000);
 }

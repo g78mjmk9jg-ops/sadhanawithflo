@@ -270,6 +270,15 @@ hr {
   margin: 2rem 0;
 }
 
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-img {
+  transition: opacity 1s ease-in-out;
+}
+
 @media (max-width: 480px) {
   .title { font-size: 2.2rem; }
   .subtitle { font-size: 1.1rem; }
