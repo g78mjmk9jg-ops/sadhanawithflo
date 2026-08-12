@@ -25,10 +25,12 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           cp -r website/* .
           git add -A
           git commit -m "Deploy website: $(git rev-parse --short HEAD)" || true
-          git push origin main
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/g78mjmk9jg-ops/sadhanawithflo.git main
