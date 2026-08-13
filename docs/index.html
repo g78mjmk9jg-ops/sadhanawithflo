@@ -14,13 +14,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css?v=20260812c">
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N8XS91FWCY"></script>
+<!-- Cookie Consent & Google Analytics 4 -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-N8XS91FWCY');
+  const CONSENT_KEY = 'sadhanawithflo-analytics-consent';
+
+  function loadAnalytics() {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-N8XS91FWCY';
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-N8XS91FWCY');
+  }
+
+  function getConsent() {
+    return localStorage.getItem(CONSENT_KEY) === 'true';
+  }
+
+  if (getConsent()) {
+    loadAnalytics();
+  }
 </script>
 </head>
 <body>
@@ -224,6 +241,40 @@
   </div>
 </footer>
 
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <p>Wir nutzen Google Analytics, um diese Website zu verbessern. Durch Fortfahren akzeptieren Sie unsere <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+    <div class="cookie-buttons">
+      <button id="cookie-reject" class="cookie-btn cookie-btn-secondary">Ablehnen</button>
+      <button id="cookie-accept" class="cookie-btn cookie-btn-primary">Akzeptieren</button>
+    </div>
+  </div>
+</div>
+
 <script src="script.js?v=20260712b"></script>
+<script>
+  const banner = document.getElementById('cookie-banner');
+  const acceptBtn = document.getElementById('cookie-accept');
+  const rejectBtn = document.getElementById('cookie-reject');
+
+  // Show banner only if no decision made yet
+  if (localStorage.getItem(CONSENT_KEY) === null) {
+    banner.style.display = 'flex';
+  } else {
+    banner.style.display = 'none';
+  }
+
+  acceptBtn.addEventListener('click', function() {
+    localStorage.setItem(CONSENT_KEY, 'true');
+    loadAnalytics();
+    banner.style.display = 'none';
+  });
+
+  rejectBtn.addEventListener('click', function() {
+    localStorage.setItem(CONSENT_KEY, 'false');
+    banner.style.display = 'none';
+  });
+</script>
 </body>
 </html>
