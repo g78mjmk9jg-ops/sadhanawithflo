@@ -162,6 +162,13 @@ a { color: var(--primary); text-decoration: none; }
 }
 .btn:hover { opacity: 0.85; }
 
+.btn-small {
+  padding: 0.6rem 1.2rem !important;
+  font-size: 0.9rem !important;
+  min-width: auto !important;
+  margin: 0.75rem 0 !important;
+}
+
 .btn-secondary {
   background: var(--secondary);
   color: #fff !important;
