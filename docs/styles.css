@@ -65,6 +65,12 @@ img { max-width: 100%; display: block; }
 .review-widget { display: block; margin: 1.5rem auto; max-width: 400px; width: 100%; }
 .review-widget img { width: 100%; border-radius: 8px; margin: 0; }
 
+.price-tag {
+  max-width: 280px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
 .icon-square {
   width: 160px;
   height: 160px;
