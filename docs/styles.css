@@ -176,6 +176,13 @@ a { color: var(--primary); text-decoration: none; }
 
 .btn-secondary:hover { opacity: 0.85; }
 
+.btn-gray {
+  background: #999;
+  color: #fff !important;
+}
+
+.btn-gray:hover { opacity: 0.85; }
+
 .circles-row {
   display: flex;
   justify-content: center;
