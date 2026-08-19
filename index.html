@@ -14,6 +14,32 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css?v=20260712b">
+<!-- Cookie Consent & Google Analytics 4 -->
+<script>
+  const CONSENT_KEY = 'sadhanawithflo-analytics-consent';
+
+  function loadAnalytics() {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-N8XS91FWCY';
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-N8XS91FWCY');
+  }
+
+  function getConsent() {
+    return localStorage.getItem(CONSENT_KEY) === 'true';
+  }
+
+  if (getConsent()) {
+    loadAnalytics();
+  }
+</script>
+
 </head>
 <body>
 
