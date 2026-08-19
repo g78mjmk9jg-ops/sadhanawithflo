@@ -442,14 +442,19 @@ dropdownMenu.querySelectorAll('a').forEach(link => {
   top: 1.5rem;
   left: 1.5rem;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  height: 22px;
 }
 
 .menu-toggle {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #999;
   cursor: pointer;
   user-select: none;
   transition: color 0.2s ease;
+  line-height: 1;
+  padding: 0;
 }
 
 .menu-toggle:hover {
@@ -464,6 +469,7 @@ dropdownMenu.querySelectorAll('a').forEach(link => {
   gap: 1rem;
   align-items: center;
   z-index: 1000;
+  height: 22px;
 }
 
 .social-icons-fixed a {
