@@ -80,8 +80,9 @@ img { max-width: 100%; display: block; }
 }
 
 .price-ticket {
-  width: 104px;
+  width: 90px;
   margin: 1.25rem auto;
+  transform: scale(1.15);
 }
 
 .blank-spacer {
