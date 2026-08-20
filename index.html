@@ -402,6 +402,7 @@ function showPage(pageId) {
   const targetPage = document.getElementById(pageId);
   if (targetPage) {
     targetPage.classList.add('active');
+    window.scrollTo(0, 0);
   }
 }
 
