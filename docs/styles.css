@@ -226,7 +226,7 @@ a { color: var(--primary); text-decoration: none; }
 
 .back-link-bottom {
   display: block;
-  margin: 5.5rem auto 0;
+  margin: 7rem auto 0;
   padding-bottom: 2rem;
   color: var(--primary);
   font-size: 0.75rem;
