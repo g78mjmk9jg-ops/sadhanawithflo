@@ -270,12 +270,6 @@ a { color: var(--primary); text-decoration: none; }
 #page-session .social-row a.icon-instagram { color: #c9a876; }
 #page-session .social-row a.icon-telegram { color: #c9a876; }
 
-#page-home .social-row a.icon-instagram { color: #c9a876; }
-#page-home .social-row a.icon-telegram { color: #c9a876; }
-
-.social-icons-fixed a.icon-instagram { color: #c9a876; }
-.social-icons-fixed a.icon-telegram { color: #c9a876; }
-
 /* spaceholder only on the original site — kept as blank spacing, no text content at all */
 .teacher-credit {
   height: 2.9rem;
