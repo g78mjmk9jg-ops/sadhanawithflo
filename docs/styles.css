@@ -169,9 +169,10 @@ a { color: var(--primary); text-decoration: none; }
 .btn:hover { opacity: 0.85; }
 
 .btn-icon {
-  height: 1.1rem;
-  width: 1.1rem;
-  margin-right: 0.5rem;
+  height: 0.95rem;
+  width: 0.95rem;
+  margin-right: 0.3rem;
+  margin-top: -0.08rem;
   vertical-align: middle;
   display: inline-block;
 }
