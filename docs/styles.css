@@ -169,8 +169,8 @@ a { color: var(--primary); text-decoration: none; }
 .btn:hover { opacity: 0.85; }
 
 .btn-icon {
-  height: 0.85rem;
-  width: 0.85rem;
+  height: 0.92rem;
+  width: 0.92rem;
   margin-right: 0.3rem;
   margin-top: -0.08rem;
   vertical-align: middle;
