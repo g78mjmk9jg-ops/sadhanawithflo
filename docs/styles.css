@@ -148,7 +148,7 @@ img { max-width: 100%; display: block; }
 }
 
 .muted { color: var(--muted); }
-.muted.small { font-size: 0.85rem; text-align: center; }
+.muted.small { font-size: 0.85rem; text-align: center; margin: 0.3rem 0 0; }
 
 .sun-emoji { font-size: 1.5rem; text-align: center; margin: 0.5rem 0; }
 
@@ -238,7 +238,10 @@ a { color: var(--primary); text-decoration: none; }
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
-  margin: 1rem 0;
+  margin: 0.4rem 0 1rem 0;
+}
+.social-row.tight {
+  margin: 0.3rem 0;
 }
 .social-row.top {
   justify-content: flex-end;
