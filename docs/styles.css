@@ -168,6 +168,14 @@ a { color: var(--primary); text-decoration: none; }
 }
 .btn:hover { opacity: 0.85; }
 
+.btn-icon {
+  height: 1.1rem;
+  width: 1.1rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+
 .btn-small {
   padding: 0.6rem 1.2rem !important;
   font-size: 0.9rem !important;
