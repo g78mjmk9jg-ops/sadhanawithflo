@@ -228,7 +228,7 @@ a { color: var(--primary); text-decoration: none; }
   display: block;
   margin: 4.5rem auto 0;
   padding-bottom: 2rem;
-  color: #999;
+  color: var(--primary);
   font-size: 0.75rem;
   text-align: center;
 }
