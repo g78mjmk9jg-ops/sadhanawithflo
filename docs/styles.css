@@ -270,7 +270,10 @@ a { color: var(--primary); text-decoration: none; }
 #page-session .social-row a.icon-instagram { color: #c9a876; }
 #page-session .social-row a.icon-telegram { color: #c9a876; }
 
-#page-session .check-mark { color: #c9a876; }
+#page-session .check-mark {
+  filter: grayscale(0.5) sepia(0.4) hue-rotate(35deg) saturate(1.2) brightness(0.9);
+  display: inline-block;
+}
 
 /* spaceholder only on the original site — kept as blank spacing, no text content at all */
 .teacher-credit {
